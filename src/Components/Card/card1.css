@@ -1,0 +1,32 @@
+.Card-container {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+    width: 100%;
+
+
+
+}
+
+.icon img {
+    width: 110px;
+    padding-top: 10px;
+}
+
+.description h2 {
+    font-size: 27px;
+    font-weight: 700;
+    padding-top: 30px;
+    color: white;
+
+
+}
+
+.description p {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    padding-top: 15px;
+}

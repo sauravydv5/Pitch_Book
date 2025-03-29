@@ -1,0 +1,48 @@
+.CardData-cont {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    background-color: #0A1733;
+    flex-wrap: wrap;
+    padding-left: 150px;
+    padding-right: 120px;
+
+
+
+}
+
+.cardName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+    background-color: #0A1733;
+
+
+}
+
+.cardName h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 45px;
+    padding-top: 20px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .card-list {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media (max-width: 768px) {
+    .card-list {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}

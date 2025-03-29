@@ -1,0 +1,54 @@
+.customer {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F8F5EF;
+    height: 80vh;
+    width: 100%;
+    color: #fff;
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        font-weight: 800;
+        padding-top: 10px;
+        color: #4B4545;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 15px;
+        color: #4B4545;
+    }
+
+    span {
+        font-weight: 800;
+    }
+
+
+}
+
+.img-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70px;
+    padding-top: 50px;
+
+}
+
+.img-box img {
+    width: 160px;
+}
+
+.Cusbtn {
+    padding: 30px;
+    color: #052236;
+    border: none;
+    padding-top: 60px;
+
+}

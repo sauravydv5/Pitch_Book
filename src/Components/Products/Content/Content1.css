@@ -1,0 +1,41 @@
+.cont1 {
+    display: flex;
+    align-items: start;
+    background-color: #051C38;
+    width: 100%;
+
+    flex-direction: column;
+    padding: 150px;
+    padding-top: 160px;
+
+
+    color: #ffffff;
+
+    h1 {
+        font-size: 50px;
+        font-weight: 800;
+    }
+
+    p {
+        padding-top: 45px;
+        font-size: 23px;
+    }
+
+
+}
+
+.b-utton {
+    margin-top: 60px;
+    padding: 16px 45px;
+
+    background-color: #E88F36;
+    color: #051C38;
+    font-size: 20px;
+    font-weight: 700;
+
+
+}
+
+.b-utton:hover {
+    background-color: #c47322;
+}

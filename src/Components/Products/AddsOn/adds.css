@@ -1,0 +1,65 @@
+.Adds-Cont {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #F8F5EF;
+
+}
+
+.Adds-Cont h1 {
+    font-size: 43px;
+    color: #051C38;
+    font-weight: 650;
+}
+
+.Contt2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 250px;
+}
+
+.left1 img {
+
+    width: 100px;
+
+
+}
+
+
+.left1 {
+    h2 {
+        font-size: 25px;
+        font-weight: 700;
+        padding-top: 20px;
+        color: #051C38;
+    }
+
+    p {
+        font-size: 18px;
+        padding-top: 25px;
+        padding-bottom: 30px;
+
+        font-weight: 380;
+    }
+}
+
+.LinkTag {
+
+    color: #205494;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-top: 20px;
+}
+
+
+.LinkTag:hover {
+    color: #051C38;
+}

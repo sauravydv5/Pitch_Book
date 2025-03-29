@@ -1,0 +1,21 @@
+   .login1-container {
+       background-color: #051C38;
+   }
+
+   .login-container {
+
+       width: 100%;
+       background-color: white;
+       box-sizing: border-box;
+
+
+   }
+
+
+   .loginLogo {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       padding: 20px 0px;
+
+   }

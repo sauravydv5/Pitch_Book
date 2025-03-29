@@ -1,0 +1,57 @@
+.banner {
+    height: 94vh;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #051C38;
+    color: #ffffff;
+    text-align: start;
+
+    h1 {
+        font-size: 60px;
+        padding-left: 170px;
+        font-weight: 700;
+        line-height: 75px;
+
+    }
+
+    p {
+
+        padding-left: 170px;
+        padding-top: 40px;
+        font-size: 26px;
+        font-weight: 400;
+
+    }
+}
+
+.search {
+    display: inline-flex;
+    padding-left: 170px;
+    padding-top: 40px;
+}
+
+.search-box {
+    padding: 15px 180px;
+}
+
+.btnn {
+    padding-right: 50px;
+    color: #051C38;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.search.search-box::placeholder {
+    color: black;
+    text-align: start;
+    display: flex;
+    font-size: 16px;
+    align-items: start;
+
+
+}

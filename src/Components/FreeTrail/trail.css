@@ -1,0 +1,25 @@
+.t-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1D5080;
+    padding-bottom: 70px;
+}
+
+.Ftext {
+    padding: 50px;
+    color: #ffffff;
+
+    h1 {
+        font-size: 45px;
+        font-weight: 700;
+    }
+}
+
+.search2 {
+    display: inline-flex;
+    text-align: start;
+    padding-top: 10px;
+
+}

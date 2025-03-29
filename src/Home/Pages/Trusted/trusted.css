@@ -1,0 +1,32 @@
+.trusted {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+    padding: 30px;
+    background-color: #C4EDEB;
+
+    h1 {
+        font-size: 45px;
+        font-weight: bold;
+    }
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 150px;
+    background-color: #C4EDEB;
+
+    img {
+        width: 150px;
+    }
+
+}
+
+.img3 img {
+
+    padding-bottom: 45px;
+}

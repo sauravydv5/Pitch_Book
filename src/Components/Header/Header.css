@@ -1,0 +1,78 @@
+.header {
+    height: 75px;
+    background-color: #F8F5EF;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.sticky {
+    top: -75px;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.image img {
+    width: 100%;
+    padding-left: 70px;
+    background: transparent;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding-right: 20px;
+}
+
+.navbar ul li {
+    color: #163dca;
+    font-size: 20px;
+    font-weight: 350;
+}
+
+.navbar ul li:hover {
+    color: #031145;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding-right: 180px;
+    margin-right: 70px;
+}
+
+.btn1 {
+    padding: 5px 15px;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn1:hover {
+    background-color: #051C38;
+    color: white;
+}
+
+.btn2 {
+    padding: 6.5px 10px;
+    border: none;
+    background-color: #C97C2F;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn2:hover {
+    background-color: #7e4b18;
+}
