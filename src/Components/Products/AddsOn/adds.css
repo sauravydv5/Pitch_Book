@@ -1,19 +1,23 @@
 .Adds-Cont {
     display: flex;
-    height: 80vh;
+    min-height: 80vh;
+    /* More flexible for different content sizes */
     width: 100%;
     padding-top: 50px;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     background-color: #F8F5EF;
-
+    text-align: center;
+    /* Ensures proper alignment */
 }
 
 .Adds-Cont h1 {
     font-size: 43px;
     color: #051C38;
     font-weight: 650;
+    max-width: 90%;
+    /* Prevents stretching */
 }
 
 .Contt2 {
@@ -21,45 +25,132 @@
     align-items: center;
     justify-content: center;
     padding-top: 50px;
-    gap: 250px;
+    gap: 150px;
+    /* Reduced for better balance */
 }
 
+/* Image Styling */
 .left1 img {
-
     width: 100px;
-
-
+    max-width: 100%;
+    /* Ensures it doesn't shrink unnaturally */
 }
 
-
+/* Text Block */
 .left1 {
-    h2 {
-        font-size: 25px;
-        font-weight: 700;
-        padding-top: 20px;
-        color: #051C38;
-    }
-
-    p {
-        font-size: 18px;
-        padding-top: 25px;
-        padding-bottom: 30px;
-
-        font-weight: 380;
-    }
+    text-align: start;
 }
 
-.LinkTag {
+.left1 h2 {
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 20px;
+    color: #051C38;
+}
 
+.left1 p {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-weight: 380;
+}
+
+/* Links */
+.LinkTag {
     color: #205494;
     text-decoration: underline;
     font-size: 20px;
     font-weight: 700;
-
     margin-top: 20px;
+    display: inline-block;
 }
-
 
 .LinkTag:hover {
     color: #051C38;
+}
+
+/* 📱 Tablet & Mobile Responsive */
+@media (max-width: 1024px) {
+    .Adds-Cont {
+        padding: 40px 5%;
+    }
+
+    .Adds-Cont h1 {
+        font-size: 36px;
+    }
+
+    .Contt2 {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .left1 h2 {
+        font-size: 22px;
+    }
+
+    .left1 p {
+        font-size: 16px;
+    }
+
+    .LinkTag {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Adds-Cont h1 {
+        font-size: 30px;
+    }
+
+    .Contt2 {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .left1 {
+        text-align: center;
+    }
+
+    .left1 h2 {
+        font-size: 20px;
+    }
+
+    .left1 p {
+        font-size: 15px;
+    }
+
+    .left1 img {
+        max-width: 80px;
+    }
+
+    .LinkTag {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Adds-Cont h1 {
+        font-size: 28px;
+    }
+
+    .Contt2 {
+        gap: 20px;
+    }
+
+    .left1 h2 {
+        font-size: 18px;
+    }
+
+    .left1 p {
+        font-size: 14px;
+    }
+
+    .left1 img {
+        max-width: 70px;
+    }
+
+    .LinkTag {
+        font-size: 15px;
+    }
 }

@@ -2,50 +2,131 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    /* ✅ Prevents layout breaking on smaller screens */
     background-color: #40C2C9;
     width: 100%;
-    max-height: 80vh;
-    padding-top: 50px;
+    min-height: 80vh;
+    /* ✅ Prevents content cut-off */
+    padding: 50px 10%;
+    gap: 40px;
+}
 
-    padding-bottom: 70px;
-
-
-
+/* Image Container */
+.image-cont {
+    flex: 1;
+    /* ✅ Ensures responsiveness */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-cont img {
-
     width: 400px;
-    padding-left: 110px;
-    margin-left: 60px;
-
+    max-width: 100%;
+    /* ✅ Prevents overflow on smaller screens */
 }
 
+/* Text Content */
 .cont-text {
-
-    padding-right: 19%;
-
-    h1 {
-        font-size: 38px;
-        font-weight: 750;
-        color: #051C38;
-    }
-
-    p {
-        font-size: 17px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
 }
 
+.cont-text h1 {
+    font-size: 38px;
+    font-weight: 750;
+    color: #051C38;
+}
+
+.cont-text p {
+    font-size: 17px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Button */
 .button1 {
     background-color: #E88F36;
     padding: 15px 35px;
     font-size: 17px;
     font-weight: 700;
 
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .button1:hover {
     background-color: #af651b;
+}
+
+/* 📱 Tablet & Mobile Responsive */
+@media (max-width: 1024px) {
+    .Econtainer {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .cont-text {
+        max-width: 600px;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .image-cont img {
+        width: 350px;
+    }
+
+    .button1 {
+        padding: 14px 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Econtainer {
+        padding: 40px 5%;
+    }
+
+    .cont-text h1 {
+        font-size: 34px;
+    }
+
+    .cont-text p {
+        font-size: 16px;
+    }
+
+    .image-cont img {
+        width: 300px;
+    }
+
+    .button1 {
+        padding: 12px 28px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Econtainer {
+        padding: 30px 5%;
+    }
+
+    .cont-text h1 {
+        font-size: 30px;
+    }
+
+    .cont-text p {
+        font-size: 15px;
+    }
+
+    .image-cont img {
+        width: 250px;
+    }
+
+    .button1 {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
 }

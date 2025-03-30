@@ -30,3 +30,20 @@
     color: white;
     padding-top: 15px;
 }
+
+
+@media (min-width: 768px) {
+    .Card-container {
+        flex-direction: row;
+        text-align: left;
+        max-width: 600px;
+    }
+
+    .icon img {
+        width: 100px;
+    }
+
+    .description {
+        margin-left: 20px;
+    }
+}

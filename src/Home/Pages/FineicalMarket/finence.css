@@ -90,3 +90,89 @@
     background-color: #051C38;
     color: #ffffff;
 }
+
+/* 📱 Tablet & Mobile Responsive */
+@media (max-width: 1024px) {
+    .body5 h1 {
+        font-size: 38px;
+    }
+
+    .body5 p {
+        font-size: 20px;
+    }
+
+    .image-container {
+        gap: 50px;
+        /* ✅ Reduced for better mobile spacing */
+    }
+
+    .text {
+        gap: 80px;
+        flex-direction: column;
+    }
+
+    .text span {
+        font-size: 34px;
+    }
+
+    .btn5 {
+        padding: 14px 35px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .body5 {
+        padding: 40px 5%;
+    }
+
+    .body5 h1 {
+        font-size: 34px;
+    }
+
+    .body5 p {
+        font-size: 18px;
+    }
+
+    .text {
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .text span {
+        font-size: 30px;
+    }
+
+    .btn5 {
+        padding: 12px 30px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .body5 {
+        padding: 30px 5%;
+    }
+
+    .body5 h1 {
+        font-size: 30px;
+    }
+
+    .body5 p {
+        font-size: 16px;
+    }
+
+    .image-container {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .text span {
+        font-size: 28px;
+    }
+
+    .btn5 {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}

@@ -1,41 +1,108 @@
 .Eval-Start {
     width: 100%;
-    height: 50vh;
+    min-height: 50vh;
+    /* More flexible for different content sizes */
     display: flex;
     align-items: center;
-    background-color: #C4EDEB;
-
+    justify-content: center;
     flex-direction: column;
-
-    h1 {
-        font-size: 45px;
-        color: #051C38;
-        font-weight: 700;
-        padding-top: 20px;
-    }
-
-    p {
-        font-size: 20px;
-        font-weight: 350;
-        padding-top: 40px;
-    }
-
-
+    background-color: #C4EDEB;
+    text-align: center;
+    padding: 40px 5%;
 }
 
-.Evalbtn {
+.Eval-Start h1 {
+    font-size: 45px;
+    color: #051C38;
+    font-weight: 700;
+    padding-top: 20px;
+    max-width: 90%;
+    /* Prevents text from stretching too wide */
+}
 
-    margin-top: 60px;
-    padding: 18px 35px;
+.Eval-Start p {
+    font-size: 20px;
+    font-weight: 350;
+    padding-top: 40px;
+    max-width: 80%;
+    /* Makes text more readable */
+}
+
+/* Button */
+.Evalbtn {
+    margin-top: 50px;
+    padding: 16px 35px;
     font-size: 20px;
     font-weight: 700;
     color: #051C38;
-
     border: 2px solid #051C38;
     background: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .Evalbtn:hover {
     background-color: #051C38;
     color: #C4EDEB;
+}
+
+/* 📱 Tablet & Mobile View */
+@media (max-width: 1024px) {
+    .Eval-Start {
+        padding: 50px 5%;
+    }
+
+    .Eval-Start h1 {
+        font-size: 38px;
+    }
+
+    .Eval-Start p {
+        font-size: 18px;
+        max-width: 85%;
+    }
+
+    .Evalbtn {
+        padding: 16px 30px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Eval-Start {
+        padding: 40px 5%;
+    }
+
+    .Eval-Start h1 {
+        font-size: 32px;
+    }
+
+    .Eval-Start p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    .Evalbtn {
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Eval-Start {
+        padding: 30px 5%;
+    }
+
+    .Eval-Start h1 {
+        font-size: 28px;
+    }
+
+    .Eval-Start p {
+        font-size: 15px;
+        max-width: 95%;
+    }
+
+    .Evalbtn {
+        padding: 12px 24px;
+        font-size: 15px;
+    }
 }

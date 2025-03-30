@@ -4,45 +4,40 @@
     justify-content: space-between;
     background-color: #051C38;
     width: 100%;
-    max-height: 90vh;
+
     padding: 50px;
     color: #ffffff;
     text-align: start;
 }
 
+/* Left Section */
 .left {
+    flex: 1;
+}
 
-    h1 {
-        font-size: 35px;
-        line-height: 42px;
-        font-weight: 700;
-        padding-left: 110px;
-        text-align: start;
-    }
+.left h1 {
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 700;
+    padding-left: 110px;
+    text-align: start;
+}
 
-    p {
+.left p {
+    font-size: 16px;
+    padding-left: 110px;
+    padding-top: 30px;
+    font-weight: lighter;
+}
 
-        font-size: 16px;
-        padding-left: 110px;
-        padding-top: 30px;
-        font-weight: lighter;
-
-
-    }
-
-    button {
-        display: flex;
-        border: 2px solid white;
-        margin-left: 110px;
-        padding: 12px 45px;
-        margin-top: 40px;
-        font-size: 16px;
-        font-weight: 700;
-
-
-
-
-    }
+.left button {
+    display: flex;
+    border: 2px solid white;
+    margin-left: 110px;
+    padding: 12px 45px;
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 button:hover {
@@ -50,10 +45,98 @@ button:hover {
     color: #051C38;
 }
 
-
-
-
+/* Right Section */
 .right {
-    width: 70%;
+    flex: 1;
+    text-align: center;
     padding-right: 130px;
+}
+
+.right img {
+    max-width: 100%;
+
+    height: auto;
+}
+
+/* 📱 Tablet & Mobile Responsive */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column-reverse;
+        /* ✅ Puts text above the image */
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .left,
+    .right {
+        flex-basis: 100%;
+        padding: 0;
+    }
+
+    .left h1 {
+        font-size: 30px;
+        padding-left: 0;
+    }
+
+    .left p {
+        font-size: 14px;
+        padding-left: 0;
+    }
+
+    .left button {
+        margin: 30px auto;
+        /* ✅ Centers button on smaller screens */
+    }
+
+    .right {
+        padding-right: 0;
+        /* ✅ Removes excessive padding */
+    }
+
+    .right img {
+        width: 80%;
+        /* ✅ Makes image smaller on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .left h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .left p {
+        font-size: 14px;
+    }
+
+    .left button {
+        padding: 10px 35px;
+        font-size: 14px;
+    }
+
+    .right img {
+        width: 90%;
+        /* ✅ Makes image even smaller */
+    }
+}
+
+@media (max-width: 480px) {
+    .left h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .left p {
+        font-size: 13px;
+    }
+
+    .left button {
+        padding: 8px 30px;
+        font-size: 13px;
+    }
+
+    .right img {
+        width: 100%;
+        /* ✅ Full width for smaller screens */
+    }
 }

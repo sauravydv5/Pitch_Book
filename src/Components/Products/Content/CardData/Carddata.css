@@ -33,16 +33,41 @@
 
 
 
+/* 📱 Tablet & Mobile View */
 @media (max-width: 1024px) {
-    .card-list {
-        grid-template-columns: repeat(2, 1fr);
+    .CardData-cont {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
+    .cardName h1 {
+        font-size: 40px;
     }
 }
 
 @media (max-width: 768px) {
-    .card-list {
-        grid-template-columns: repeat(1, 1fr);
+    .CardData-cont {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        /* Further adjust */
+        gap: 15px;
+        padding: 20px;
+    }
 
+    .cardName h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .CardData-cont {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /* Stack more on small screens */
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .cardName h1 {
+        font-size: 28px;
     }
 }

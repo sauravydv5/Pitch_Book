@@ -3,39 +3,104 @@
     align-items: start;
     background-color: #051C38;
     width: 100%;
-
     flex-direction: column;
-    padding: 150px;
+    padding: 150px 10%;
+    /* Use percentage padding for flexibility */
     padding-top: 160px;
-
-
     color: #ffffff;
-
-    h1 {
-        font-size: 50px;
-        font-weight: 800;
-    }
-
-    p {
-        padding-top: 45px;
-        font-size: 23px;
-    }
-
-
+    text-align: start;
+    /* Keep text aligned left */
 }
 
+/* Heading */
+.cont1 h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+/* Paragraph */
+.cont1 p {
+    padding-top: 45px;
+    font-size: 23px;
+    max-width: 800px;
+    /* Prevent overly long text */
+}
+
+/* Button */
 .b-utton {
     margin-top: 60px;
     padding: 16px 45px;
-
     background-color: #E88F36;
     color: #051C38;
     font-size: 20px;
     font-weight: 700;
-
-
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .b-utton:hover {
     background-color: #c47322;
+}
+
+/* 📱 Tablet & Mobile View */
+@media (max-width: 1024px) {
+    .cont1 {
+        padding: 100px 8%;
+        text-align: center;
+        /* Center text on smaller screens */
+    }
+
+    .cont1 h1 {
+        font-size: 40px;
+    }
+
+    .cont1 p {
+        font-size: 20px;
+    }
+
+    .b-utton {
+        padding: 14px 40px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cont1 {
+        padding: 80px 5%;
+    }
+
+    .cont1 h1 {
+        font-size: 35px;
+    }
+
+    .cont1 p {
+        font-size: 18px;
+        padding-top: 30px;
+    }
+
+    .b-utton {
+        padding: 12px 35px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cont1 {
+        padding: 60px 5%;
+        text-align: center;
+    }
+
+    .cont1 h1 {
+        font-size: 30px;
+    }
+
+    .cont1 p {
+        font-size: 16px;
+    }
+
+    .b-utton {
+        padding: 10px 30px;
+        font-size: 15px;
+    }
 }

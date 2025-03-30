@@ -23,3 +23,41 @@
     padding-top: 10px;
 
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Ftext h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Ftext {
+        padding: 30px;
+    }
+
+    .Ftext h1 {
+        font-size: 35px;
+    }
+
+    .search2 {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .Ftext {
+        padding: 20px;
+    }
+
+    .Ftext h1 {
+        font-size: 28px;
+    }
+
+    .search2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

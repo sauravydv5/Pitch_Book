@@ -62,3 +62,96 @@
 .btn4:hover {
     background-color: #9c5814;
 }
+
+/* 📱 Mobile & Tablet Responsive */
+@media (max-width: 1024px) {
+    .part4 h1 {
+        font-size: 35px;
+    }
+
+    .part4 p {
+        font-size: 18px;
+    }
+
+    .img-container {
+        gap: 30px;
+        /* ✅ Reduced spacing */
+    }
+
+    .btn4 {
+        padding: 15px 40px;
+        font-size: 18px;
+    }
+}
+
+/* 📱 Tablet Responsive */
+@media (max-width: 1024px) {
+    .part4 h1 {
+        font-size: 35px;
+    }
+
+    .part4 p {
+        font-size: 18px;
+    }
+
+    .img-container {
+        gap: 30px;
+    }
+
+    .btn4 {
+        padding: 15px 40px;
+        font-size: 18px;
+    }
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+    .part4 h1 {
+        font-size: 30px;
+    }
+
+    .part4 p {
+        font-size: 16px;
+    }
+
+    .img-container {
+        gap: 20px;
+    }
+
+    .img-container img {
+        max-width: 120px;
+        flex: 1 1 45%;
+    }
+
+    .btn4 {
+        padding: 12px 35px;
+        font-size: 16px;
+    }
+}
+
+/* 📱 Extra Small Screens (2x2 Layout) */
+@media (max-width: 553px) {
+    .img-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .img-container img {
+        max-width: 100px;
+        flex: 1 1 40%;
+    }
+
+    .button-wrapper {
+        margin-top: 20px;
+        /* ✅ Adds space so button doesn't touch images */
+    }
+}
+
+/* 📱 Smallest Screens (1x1 Layout) */
+@media (max-width: 400px) {
+    .img-container img {
+        max-width: 90px;
+        flex: 1 1 100%;
+    }
+}

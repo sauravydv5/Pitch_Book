@@ -8,28 +8,28 @@
     background-color: #051C38;
     color: #ffffff;
     text-align: start;
+    padding: 0 10%;
+    /* More flexible instead of fixed left padding */
+}
 
-    h1 {
-        font-size: 60px;
-        padding-left: 170px;
-        font-weight: 700;
-        line-height: 75px;
+.banner h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 75px;
+    max-width: 90%;
+    /* Prevents text from overflowing */
+}
 
-    }
-
-    p {
-
-        padding-left: 170px;
-        padding-top: 40px;
-        font-size: 26px;
-        font-weight: 400;
-
-    }
+.banner p {
+    padding-top: 30px;
+    font-size: 26px;
+    font-weight: 400;
+    max-width: 70%;
+    /* Limits width for readability */
 }
 
 .search {
     display: inline-flex;
-    padding-left: 170px;
     padding-top: 40px;
 }
 
@@ -46,12 +46,88 @@
     text-align: center;
 }
 
-.search.search-box::placeholder {
+.btnn:hover {
+    background-color: #c47322;
+}
+
+/* Placeholder Styling */
+.search-box::placeholder {
     color: black;
+    font-size: 16px;
     text-align: start;
     display: flex;
-    font-size: 16px;
-    align-items: start;
+    align-items: center;
+    justify-content: start;
+}
 
+/* 📱 Mobile & Tablet Responsive */
+@media (max-width: 1024px) {
+    .banner h1 {
+        font-size: 50px;
+        line-height: 65px;
+    }
 
+    .banner p {
+        font-size: 22px;
+    }
+
+    .search-box {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .btnn {
+        padding: 12px 25px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .banner p {
+        font-size: 20px;
+        max-width: 100%;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .search-box {
+        width: 90%;
+    }
+
+    .btnn {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+
+    .search-box {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .btnn {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
 }

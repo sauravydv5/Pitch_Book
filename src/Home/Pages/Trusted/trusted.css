@@ -2,7 +2,7 @@
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    height: 20vh;
+    height: auto;
     width: 100%;
     padding: 30px;
     background-color: #C4EDEB;
@@ -29,4 +29,60 @@
 .img3 img {
 
     padding-bottom: 45px;
+}
+
+/* 📱 Tablet Responsive */
+@media (max-width: 1024px) {
+    .trusted h1 {
+        font-size: 35px;
+    }
+
+    .img {
+        gap: 30px;
+        padding: 15px 5%;
+    }
+
+    .img img {
+        max-width: 120px;
+    }
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+    .trusted h1 {
+        font-size: 30px;
+    }
+
+    .img {
+        gap: 20px;
+        padding: 10px 5%;
+    }
+
+    .img img {
+        max-width: 100px;
+    }
+}
+
+/* 📱 Extra Small Screens (2x2 Layout) */
+@media (max-width: 553px) {
+    .img {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .img img {
+        max-width: 90px;
+        flex: 1 1 40%;
+        /* ✅ Forces 2 images per row */
+    }
+}
+
+/* 📱 Smallest Screens (1x1 Layout) */
+@media (max-width: 400px) {
+    .img img {
+        max-width: 80px;
+        flex: 1 1 100%;
+        /* ✅ Forces 1 image per row */
+    }
 }

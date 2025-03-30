@@ -10,7 +10,7 @@ import Explore from "./ExplorePitchbook/Explore";
 import CardList from "./Content/CardData/CardList";
 import Adds_on from "./AddsOn/Adds_on";
 import Eval_strat from "./Strategy/Eval_strat";
-import Feedback from "./Client_feedBack/Feedback";
+// import Feedback from "./Client_feedBack/Feedback";
 
 const Product = () => {
   return (
@@ -21,7 +21,7 @@ const Product = () => {
       <CardList />
       <Adds_on />
       <Eval_strat />
-      <Feedback />
+      {/* <Feedback /> */}
 
       <FreeTrail />
 

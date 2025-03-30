@@ -50,3 +50,63 @@
     background-color: #051C38;
     color: #fff;
 }
+
+/* 📱 Mobile & Tablet Responsive */
+@media (max-width: 1024px) {
+    .body3 {
+        flex-direction: column;
+        /* ✅ Ensures content stacks vertically */
+        height: auto;
+        text-align: center;
+    }
+
+    .body3 img {
+        max-width: 80%;
+        /* ✅ Prevents overflow */
+        padding-left: 0;
+    }
+
+    .right {
+        text-align: center;
+        padding: 20px 10%;
+    }
+
+    .right h1 {
+        font-size: 35px;
+        /* ✅ Adjusts heading size */
+    }
+
+    .right p {
+        font-size: 18px;
+        padding: 20px 0px;
+    }
+
+    .btn3 {
+        padding: 15px 40px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .body3 img {
+        max-width: 90%;
+    }
+
+    .right {
+        padding: 15px;
+    }
+
+    .right h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .right p {
+        font-size: 16px;
+    }
+
+    .btn3 {
+        padding: 12px 35px;
+        font-size: 15px;
+    }
+}

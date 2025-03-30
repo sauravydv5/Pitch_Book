@@ -20,7 +20,7 @@ const Login = () => {
           />
         </div>
       </div>
-      <div className="login-box">
+      {/* <div className="login-box">
         <h2>Sign In to PitchBook</h2>
         <form onSubmit={handleSubmit}>
           <input
@@ -45,7 +45,7 @@ const Login = () => {
           </a>
           <button type="submit">Sign In</button>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 };
